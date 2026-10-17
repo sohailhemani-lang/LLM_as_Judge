@@ -195,7 +195,7 @@ tests:
     assert:
       - type: contains-json
       - type: llm-rubric
-        value: |
+        value: 
           The answer should mention checking internet connection, inbox filters, junk folder,
           mailbox quota, sync issues, or Outlook restart.
 
