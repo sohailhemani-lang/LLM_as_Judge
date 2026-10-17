@@ -186,9 +186,8 @@ tests:
       - type: contains-json
       - type: llm-rubric
         value: |
-          The answer should stay in enterprise IT support context and mention approved drivers,
-          printer settings, or contacting IT if permissions are needed.
-
+          The answer should mention checking for approved drivers and confirm contacting IT support if permissions are required for installation. 
+          
   # Test 7: Not receiving Outlook emails — should mention common causes.
   - vars:
       input: "Why am I not receiving Outlook emails?"
