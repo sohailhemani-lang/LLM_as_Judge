@@ -1,6 +1,7 @@
 name: Promptfoo Evaluation
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
   pull_request:
@@ -11,11 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      # OpenRouter key exposed under both names:
-      # - OPENROUTER_API_KEY: read by our promptfooconfig apiKey field
-      # - OPENAI_API_KEY: promptfoo's openai: provider also checks this as fallback
-      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-      OPENAI_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       LANGFUSE_SECRET_KEY: ${{ secrets.LANGFUSE_SECRET_KEY }}
       LANGFUSE_PUBLIC_KEY: ${{ secrets.LANGFUSE_PUBLIC_KEY }}
       LANGFUSE_BASE_URL: ${{ secrets.LANGFUSE_BASE_URL }}
