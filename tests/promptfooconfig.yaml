@@ -195,8 +195,7 @@ tests:
       - type: contains-json
       - type: llm-rubric
         value: 
-          The answer should mention checking internet connection, inbox filters, junk folder,
-          mailbox quota, sync issues, or Outlook restart.
+          The answer should explicitly include troubleshooting steps for junk folder filtering, synchronization problems, and an outlook restart. 
 
   # Test 8: Clear Chrome cache — should give correct browser steps.
   - vars:
