@@ -195,7 +195,7 @@ tests:
       - type: contains-json
       - type: llm-rubric
         value: 
-          The answer should explicitly include troubleshooting steps for junk folder filtering, synchronization problems, and an outlook restart. 
+          The answer should mention troubleshooting ideas such as internet connection, inbox filters, junk folder filtering, mailbox quata, synchronization problems, and an outlook restart. 
 
   # Test 8: Clear Chrome cache — should give correct browser steps.
   - vars:
