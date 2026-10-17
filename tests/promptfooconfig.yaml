@@ -16,7 +16,7 @@ description: Module 13 Lab 1 - LLM evaluation pipeline with 30+ test case
 defaultTest:
   options:
     provider:
-      id: openai:chat:openai/gpt-4.1-mini
+      id: openai:chat:gpt-4.1-mini
       config:
         apiBaseUrl: https://openrouter.ai/api/v1
         headers:
@@ -83,7 +83,7 @@ prompts:
 #   headers       → Optional but recommended for OpenRouter usage tracking/rankings.
 # ─────────────────────────────────────────────────────────────────────────────
 providers:
-  - id: openai:chat:openai/gpt-4.1-mini
+  - id: openai:chat:gpt-4.1-mini
     config:
       apiBaseUrl: https://openrouter.ai/api/v1
       temperature: 0
